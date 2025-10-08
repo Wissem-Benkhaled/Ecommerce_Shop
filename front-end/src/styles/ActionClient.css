@@ -1,0 +1,112 @@
+.modal{
+    top: 80px;
+    left: 60px;
+}
+
+/* 🎨 Conteneur général de la modal */
+.modal-content {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(145deg, #ffffff, #f7f8fc);
+}
+
+/* 📝 Titre de la modal */
+.modal-header {
+  border-bottom: none;
+  background: #1976d2; /* Indigo */
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 16px 16px 0 0;
+}
+
+/* 📌 Corps de la modal */
+.modal-body {
+  padding: 20px 24px;
+}
+
+/* Champs du formulaire */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+  color: #374151; /* Gray-700 */
+}
+
+.form-control {
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  border: 1px solid #dbd4d1; /* Gray-300 */
+  transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 6px rgba(79, 70, 229, 0.4);
+}
+
+/* 🔘 Boutons */
+.modal-footer {
+  border-top: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 24px;
+}
+
+.btn-primary {
+  background: #1976d2;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #4338ca;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  color: #374151;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #d1d5db;
+}
+
+/* 📱 Responsive */
+@media (max-width: 576px) {
+  .modal-content {
+    border-radius: 12px;
+  }
+
+  .modal-header {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .modal-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+}
